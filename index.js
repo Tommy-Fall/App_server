@@ -4,7 +4,10 @@ const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const cors = require('cors')
 // const mongoose = require('mongoose')
-// require('dotenv').config()
+require('dotenv').config()
+
+
+
 
 //app
 const app = express()
@@ -38,7 +41,7 @@ app.use('/api',blogRoutes)
 
 
 // port
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 80
 app.listen(port, ()=>{
     console.log(`Server is running on port ${port}`)
 })
