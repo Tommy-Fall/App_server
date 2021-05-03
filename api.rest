@@ -1,0 +1,33 @@
+GET http://localhost:8000/api
+
+###
+
+POST http://localhost:8000/api/register HTTP/1.1
+content-type: application/json
+
+{
+    "username": "camilooo",
+    "email": "seifeawdwa@sfe.com",
+    "password": "12345678"
+}
+
+
+###
+
+POST http://localhost:8000/api/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "camilooo",
+    "password": "12345678"
+}
+
+###
+
+GET http://localhost:8000/api/logout
+
+###
+
+GET http://localhost:8000/api/secret HTTP/1.1
+Authorization: Bearer eyJhbGiOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDBhMzcwYWUyNmNmYTNlNWMyODI1OTUiLCJpYXQiOjE2MTEyODIxODgsImV4cCI6MTYxMTM2ODU4OH0.7RLFKQZ8uGSLn85oH4Zh13nK1lwLgwHU9R7Rhoa-Agk
+
