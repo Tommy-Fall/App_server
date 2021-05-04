@@ -35,6 +35,7 @@ if(process.env.NODE_ENV == 'development'){
 
 //routes middleware
 app.use('/api',blogRoutes)
+app.use('/',blogRoutes)
 // app.use('/api',authRoutes)
 
 
